@@ -6,6 +6,16 @@
 
 This project demonstrates the deployment of the **VProfile application** on a **production-grade Kubernetes cluster** running on AWS, provisioned using **kOps**.
 
+Cluster management is performed from a dedicated EC2 instance configured as the administration node. This instance should have the following tools installed:
+
+kops → for cluster creation and management
+
+kubectl → for interacting with the Kubernetes API
+
+aws-cli → for AWS resource management
+
+Optionally, helm → for managing Helm charts if needed
+
 We started from an existing project with all necessary configurations defined for inter-service communication and Docker images already available in a registry.
 
 Although this is a simple project, it allows working in a real production environment and understanding how to use different Kubernetes objects to run an application.
